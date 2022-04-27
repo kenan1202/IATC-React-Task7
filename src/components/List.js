@@ -19,7 +19,7 @@ function List() {
     return (
         <div className='list'>
             {state?.map((item, id) => (
-                <ListItem key = {id} item = {item}></ListItem>
+                <ListItem key = {id} item = {item} id = {id}></ListItem>
             ))}
         </div>
     )

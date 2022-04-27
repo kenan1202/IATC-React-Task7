@@ -1,0 +1,17 @@
+.edit {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edit img {
+    margin-right: 20px;
+}
+.edit h2,
+.edit button,
+.edit img,
+.edit button,
+.edit p {
+    margin-right: 20px;
+} 

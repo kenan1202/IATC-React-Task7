@@ -17,6 +17,10 @@ const itemReducer = (state = initialState, action) => {
             state.splice(index2, 1);
 
             return [...state];
+        case 'DECREASE_PRICE':
+            const index3 = state.indexOf(action.payload);
+            state[index3].price--;
+            return [...state];
         default:
             return state;
     }
