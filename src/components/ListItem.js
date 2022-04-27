@@ -13,7 +13,7 @@ function ListItem({item, id}) {
         <div className='listItem'>
             <img src = {item.image} alt = "Item Image" width = "50px"></img>
             <h2>{item.name}</h2>
-            <p>{Math.floor(item.price)}</p>
+            <p>{Math.floor(item.price) <= 0 ? 0 : Math.floor(item.price)}</p>
             <button onClick={() => dispatch({type: 'ADD_PRICE', payload: item})}>Increase Price</button>
             <button onClick = {() => dispatch({type: 'DECREASE_PRICE', payload: item})}>Decrease Price</button>
             <button onClick={() => navigate(`/items/${id + 1}`)}>Edit Item</button>
